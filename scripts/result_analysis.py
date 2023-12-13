@@ -5,28 +5,6 @@ import argparse
 import logging
 
 
-# JSON File format/structure used
-"""
-{
-    "test_case_id": 1,
-    "test_case_name": "Request Access Test",
-    "status": "passed",
-    "duration": 2.019,
-    "timestamps": "2023-10-31T06:31:28Z",
-}
-
-Above is an example of a test case object. This dictionary contains data for each test case executed.
-- test_case_id: This is the unique id of each test case.
-- test_case_name: This is the name of the test.
-- status: This represents the state of the test case. Passed or Failed.
-- duration: The execution time in seconds for the test case.
-- timestamps: Represents the exact date and time when the test case was executed.
-
-
-NOTE: This script assumes an array of objects, containing the above mentioned structure and format.
-"""
-
-
 # This is a decorator function to handle and log any errors
 def error_handler_decorator(func):
     def wrapper(*args, **kwargs):
