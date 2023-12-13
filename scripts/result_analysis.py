@@ -5,16 +5,6 @@ import argparse
 import logging
 
 
-# Script Overview
-"""
-This script processes test results stored in a JSON file. It converts the data to a Pandas DataFrame, 
-creates a CSV, exports it, and provides metrics like the number of tests executed, passed, failed, 
-average execution time, and more. Command-line arguments enable specifying file locations and names. 
-Error handling is implemented using a decorator. The script aims to streamline the analysis and 
-reporting of test results with flexibility in input and output file locations.
-
-"""
-
 # JSON File format/structure used
 """
 {
